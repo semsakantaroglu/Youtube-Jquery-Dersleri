@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<script src="../jquery-3.1.1.js"></script>
+	<style type="text/css">
+		
+	.bir {
+		background-color: #b9a9a9;
+
+	}
+	.iki {
+		background-color: #d1d1f6;
+	}
+	.uc{
+		background-color: #384e63;
+
+
+	}
+	.genel {
+		margin: 20px;
+		padding: 20px;
+		width: 50px;
+		height: 50px;
+		float:left;
+		color: white;
+
+	}
+
+	</style>
+	
+	<script>
+	
+	/*$(document).ready(function() {
+		$("#buton").click(function(){
+			 $(".genel").css("color","black");
+
+
+		});
+
+
+	
+	});*/
+	/*$(document).ready(function() {
+		$("#buton").click(function(){
+			 $("div.genel").css("color","black");
+
+
+		});
+
+
+	
+	});*/
+
+	$(document).ready(function() {
+		$("#buton").click(function(){
+			 $(".bir,.iki").css("color","black");
+
+
+		});
+
+
+	
+	});
+		
+		
+	
+	
+	</script>
+	
+	
+	
+	</head>
+
+
+	<body>
+
+	<div class="bir genel">
+		
+		Div1
+	
+	</div>
+
+	<div class="iki genel">
+		
+		Div2
+
+	</div>
+
+	<div class="uc genel">
+		
+		Div3
+
+	</div>
+
+	<p class="genel" style="background-color:red">
+		Yazı Alanı
+	</p>
+	<br><br>
+
+	<button  id = "buton"> Tıkla</button>
+
+	
+	</body>
+</html>
