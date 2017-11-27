@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<style type="text/css">
+	#uc {	
+		background-color:#ebd3c7;
+		border:2px groove;
+		margin:20px;
+		width:200px;
+		height:50px;
+		padding:30px;
+	}
+
+	</style>
+	<script src="../jquery-3.1.1.js"></script>
+	
+	
+	<script>
+	
+	$(document).ready(function() {
+		$("#buton").click(function(){
+			var deger = $("#yazi").val();
+
+			$("#uc p").text(deger);
+
+		});
+		$("#buton2").click(function(){
+			var deger = $("#uc p").text();
+
+			$("#uc p").html("<b>" + deger + "</b>");
+
+
+
+			
+			
+		});
+		
+	
+	});
+	
+	
+	
+	</script>
+	
+	
+	
+	
+	
+	</head>
+
+
+	<body>
+	
+
+	<div id = "uc">
+
+		<p>
+			Naber
+		</p>
+	
+	
+	
+	</div>
+	
+	
+	
+	Eklenecek Yazı: <input type="text" name="yazi" id = "yazi"><br><br>
+
+	
+	<button id = "buton"> Yazıyı Değiştir </button><br><br>
+
+
+	<button id = "buton2"> Kalın Yazı Yap</button>
+	
+	
+	</body>
+</html>
+
+
+
