@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	
+	<script src="../jquery-3.1.1.js"></script>
+	
+	
+	<script>
+	
+	/*$(document).ready(function() {
+		
+		$("#buton").click(function(){
+
+			alert($("table.table1").html());
+
+
+		});
+		
+
+
+	
+	});*/
+	/*$(document).ready(function() {
+		
+		$("#buton").click(function(){
+
+			$("tr").each(function(){
+
+				alert($(this).html());
+
+			});
+
+
+		});
+		
+	});*/
+	$(document).ready(function() {
+		
+		$("#buton").click(function(){
+
+			$("td").each(function(){
+
+				alert($(this).html());
+
+			});
+
+
+		});
+		
+	});
+
+	
+	
+	</script>
+	
+	</head>
+	<body>
+	<table class = "table1" border="1" align="center">
+		<tr>
+			<td> Java </td>
+			<td> Python </td>
+			<td> C++</td>
+
+		</tr>
+		<tr>
+			<td> Go </td>
+			<td> Javascript </td>
+			<td> Jquery </td>
+
+		</tr>
+
+		<tr>
+			<td> Php</td>
+			<td> Django </td>
+			<td> Node Js </td>
+
+		</tr>
+	</table>
+		
+	<button id = "buton"> Tıkla </button>
+	
+	</body>
+</html>
