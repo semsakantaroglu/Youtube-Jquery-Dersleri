@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<script src="../jquery-3.1.1.js"></script>
+	<style type="text/css">
+		
+	.bir {
+		background-color: #b9a9a9;
+
+	}
+	.iki {
+		background-color: #d1d1f6;
+	}
+	.uc{
+		background-color: #384e63;
+
+
+	}
+	.genel {
+		margin: 20px;
+		padding: 20px;
+		width: 50px;
+		height: 50px;
+		float:left;
+		color: white;
+
+	}
+
+	</style>
+	
+	<script>
+	
+	/*$(document).ready(function() {
+		
+		$("#buton").click(function(){
+
+			$("[title]").css("color","black");
+
+
+		});
+
+	
+	});*/
+	/*$(document).ready(function() {
+		
+		$("#buton").click(function(){
+
+			$("div[title]").css("color","black");
+
+
+		});
+
+	
+	});*/
+
+	/*$(document).ready(function() {
+		
+		$("#buton").click(function(){
+
+			$("[title = 'Para1']").css("color","black");
+
+
+		});
+
+	
+	});*/
+
+	$(document).ready(function() {
+		
+		$("#buton").click(function(){
+
+			$("div[title = 'Birinci Div']").css("color","black");
+
+
+		});
+
+	
+	});
+	
+	
+	
+	
+	
+	
+	</script>
+	
+	
+	
+	</head>
+
+
+	<body>
+
+	<div class="bir genel" title="Birinci Div">
+		
+		Div1
+	
+	</div>
+
+	<div class="iki genel" title = "İkinci Div">
+		
+		Div2
+
+	</div>
+
+	<div class="uc genel">
+		
+		Div3
+
+	</div>
+
+	<p class="genel" style="background-color:red" title="Para1">
+		Yazı Alanı
+	</p>
+	<br><br>
+
+	<button  id = "buton"> Tıkla</button>
+
+	
+	</body>
+</html>
